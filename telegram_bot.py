@@ -173,7 +173,7 @@ async def handle_non_text(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     await update.message.reply_text("Lo siento, solo se permiten mensajes de texto.")
 
 def main() -> None:
-    app = ApplicationBuilder().token('8102217246:AAFJ1W8x3RP7Vv56OmFUmO88nkfXlZYPMXc').build()
+    app = ApplicationBuilder().token('YOUR TOKEN HERE').build()
 
     # Command handlers
     app.add_handler(CommandHandler("start", start))
